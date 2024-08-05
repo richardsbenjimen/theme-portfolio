@@ -15,11 +15,11 @@ const Footer = () => {
     ], [])
     
     return (
-        <FooterWrapper>
-            <FlexBox>
+        <FooterWrapper id="footer">
+            <FlexBox className='item'>
                 <Logo onClick={() => scrollHandler("home")}>Alfred Richards <strong>.</strong></Logo>
             </FlexBox>
-            <FlexBox gap={40} style={{  }} justifyContent='center' alignItems='center'>
+            <FlexBox gap={40} style={{  }} justifyContent='center' alignItems='center' className='item'>
                 {links.map(item => item)}
             </FlexBox>
         </FooterWrapper>

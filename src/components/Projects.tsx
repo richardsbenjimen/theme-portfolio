@@ -45,7 +45,7 @@ const Projects = () => {
     }
     return (
         <GridBox id="projects" className='component' gridTemplateColumns={"1fr 1fr"} flexDirection='column' margin={"100px 0"} columnGap={20}>
-            <FlexBox height={200} position='sticky' top={100} flexDirection='column'>
+            <FlexBox height={200} position='sticky' top={100} flexDirection='column' className='sticky-div'>
                 <ComponentTitle>Projects</ComponentTitle>
                 <ComponentTitle fontSize={30} fontWeight={"var(--font-weight-700)"}>Delivering Innovation and Precision in Every Project</ComponentTitle>
             </FlexBox>

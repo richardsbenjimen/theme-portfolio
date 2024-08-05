@@ -25,7 +25,7 @@ const Experience = () => {
   return (
     <GridBox gridTemplateColumns={"1fr 1fr 1fr"} margin={"100px 0"} id="experience" height={500} alignContent='center' className='component' backgroundColor='var(--experience-bg)' padding={"0 72px 100px 72px"}>
       {workConfig.map(({ role, company, delay, description }, index) => (
-        <WorkCard cardNumber={index + 1} data-aos="fade-right" data-aos-delay={delay}>
+        <WorkCard cardNumber={index + 1} data-aos="fade-right" data-aos-delay={delay} className='card'>
           <h1>{`0${index + 1}`}</h1>
           <h2><strong>{company}</strong>{role}</h2>
           <p>{description}</p>

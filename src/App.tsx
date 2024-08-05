@@ -14,6 +14,7 @@ import AOS from 'aos';
 import "aos/dist/aos.css";
 import ToastComponent from './components/ToastComponent';
 import { Switch } from './components/utils';
+import SideModal from './components/SideModal';
 
 
 type ContextPropType = {

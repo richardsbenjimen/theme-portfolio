@@ -9,7 +9,7 @@ const Welcome = () => {
         </span>
     }
     return (
-        <GridBox height={"100vh"} alignItems='center' gridTemplateColumns={"1fr 1fr"} id="home" className='component'>
+        <GridBox height={"100vh"} alignItems='center' gridTemplateColumns={"1fr 1fr"} id="home" className='component '>
             <FlexBox flexDirection='column' data-aos="fade-right" data-aos-delay="400">
                 <Maintitle fontSize={50} textAlign="center" margin={"0 0 32px 0"}  >
                     I,m Alfred Richards<br />
@@ -17,7 +17,7 @@ const Welcome = () => {
                     <strong>Based in Hyderabad</strong><br/>
                 </Maintitle>
             </FlexBox>
-            <ImageContainer src={`${process.env.PUBLIC_URL}/main.png`} minWidth={500} height={500} data-aos="fade-left" data-aos-delay="400" />
+            <ImageContainer src={`${process.env.PUBLIC_URL}/main.png`} minWidth={500} height={500} data-aos="fade-left" data-aos-delay="400" className='main-img'/>
         </GridBox>
     )
 }

@@ -29,6 +29,7 @@ export const GridBox = styled.div(({ gridTemplateColumns, alignItems, height, ma
 
 export const NavItems = styled(FlexBox)({
     gap: 10,
+    ".mobile-icon": { display: "none" },
     p: {
         width: 100,
         height: 80,
@@ -44,6 +45,20 @@ export const NavItems = styled(FlexBox)({
         color: "var(--header-selected-color)",
         "&:hover": {
             color: "var(--header-selected-color)",
+        }
+    },
+    "@media all and (max-width:800px)":{
+        p:{
+            display: "none"
+        },
+        ".mobile-icon":{
+            position: 'relative',
+            display: 'block',
+            border:"none",
+            backgroundColor: "unset",
+            svg:{
+                fill: "var(--text-color)"
+            }
         }
     }
 })
@@ -65,6 +80,9 @@ export const Maintitle = styled.h1(({ fontSize, textAlign, margin }: CSSProperti
     margin,
     strong: {
         color: `var(--strong)`
+    },
+    "@media all and (max-width:800px)":{
+        height: 350
     }
 }))
 
@@ -256,7 +274,15 @@ export const HeaderWrapper = styled(FlexBox)(({ scrolled }: { scrolled?: boolean
     width: "100%",
     zIndex: 1,
     backgroundColor: "var(--background-color)",
-    boxShadow: scrolled ? "0 .125rem .25rem rgba(0,0,0,.075)" : ""
+    boxShadow: scrolled ? "0 .125rem .25rem rgba(0,0,0,.075)" : "",
+    ".main-header":{
+        padding: "0 72px"
+    },
+    "@media all and (max-width:800px)":{
+        ".main-header": {
+            padding: 0,
+        }
+    }
 }))
 
 

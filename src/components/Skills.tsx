@@ -62,15 +62,15 @@ const Skills = () => {
             <ComponentTitle fontSize={40} fontWeight={"var(--font-weight-700)"}>Crafting Excellence in Every Line of Code</ComponentTitle>
             <ComponentDescription margin={"0 0 50px 0"}>
                 Welcome to my skills page, where innovation meets precision. Here, I showcase the diverse array of technical proficiencies that enable me to transform complex challenges into seamless solutions. With a meticulous approach to full-stack development, I ensure every project I undertake is built on a foundation of robust, scalable, and efficient code.</ComponentDescription>
-            <GridBox rowGap={20} gridTemplateColumns={"1fr 2fr"} columnGap={50}>
-                <FlexBox flexDirection='column' gap={20}>
+            <GridBox rowGap={20} gridTemplateColumns={"1fr 2fr"} columnGap={50} className='skill-container'>
+                <FlexBox flexDirection='column' gap={20} className='buttons'>
                     {skillsConfig.map((item) => (
                         <SkillButton selected={selectedSkill.buttonText === item.buttonText} onClick={() => setSelectedSkill(item)}>{item.buttonText}</SkillButton>
                     ))}
                 </FlexBox>
                 <FlexBox flexDirection='column' alignContent='start' >
                     <ComponentDescription margin={"0 0 30px 0"}>{selectedSkill.description}</ComponentDescription>
-                    <FlexBox gap={20} flexWrap='wrap' data-aos="zoom-in-up">
+                    <FlexBox gap={20} flexWrap='wrap' data-aos="zoom-in-up" className='skills-cards'>
                         {
                             selectedSkill.skills.map(({ icon: Icon, text }) => (<SkillCard>
                                 <Icon width={50} height={50} />
