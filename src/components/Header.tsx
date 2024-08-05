@@ -23,7 +23,7 @@ const Header = ({ scrollPercent }: { scrollPercent: number }) => {
                         {item}
                     </p>))}
                     <p>
-                        <ResumeButton onClick={() => window.open("https://richards-portfolio-assets.s3.us-east-2.amazonaws.com/Richards+resume.pdf")}>Get Resume</ResumeButton>
+                        <ResumeButton onClick={() => window.open("https://richards-portfolio-assets.s3.us-east-2.amazonaws.com/Richards-full-stack-resume.pdf")}>Get Resume</ResumeButton>
                     </p>
                     <p style={{ cursor: 'default' }}>
                         <Switch />
