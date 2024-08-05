@@ -17,8 +17,10 @@ const ModelWrapper = styled.div({
     padding:"10px 0",
     color: "var(--text-color)",
     boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
+    zIndex: 1,
+    gap: 5,
     button:{
-        height: 30,
+        height: 20,
         textAlign:'start',
         padding:20,
         fontSize: 14,
