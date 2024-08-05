@@ -1,0 +1,43 @@
+:root {
+    --background-color: black;
+    --text-color: white;
+    --selected-color: #5221e6;
+    --strong: hsla(0, 0%, 100%, 0.5);
+    --work-number: #8491a0;
+    --work-color-1: #3cc74e;
+    --work-color-2: #609bff;
+    --work-color-3: #e95d90;
+    --description-color: #8491a0;
+    --button-background: #1d1919;
+    --button-hover: rgba(82, 33, 230, 0.2);
+    --card-hover-background: rgba(255, 255, 255, 0.1);
+    --header-text-color: hsla(0, 0%, 100%, 0.7);
+    --header-item-hover: #0ff;
+    --header-selected-color: #0ff;
+    --footer-bg: #181823;
+    --logo-color: #fff;
+    --experience-bg: black;
+    --form-input-border: 0px none #000;
+    --form-input-bg: #181823;
+    --font-weight-700: 700;
+}
+
+[data-theme="light"] {
+    --background-color: #fff;
+    --text-color: black;
+    --header-text-color: black;
+    --card-hover-background: rgba(0, 0, 0, 0.1);
+    --footer-bg: #fff;
+    --logo-color: #4299e1;
+    --header-text-color: #141719;
+    --strong: #5a646b;
+    --header-item-hover: #7e8285;
+    --header-selected-color: #fff;
+    --experience-bg: #fbf9f3;
+    --selected-color: #4299e1;
+    --description-color: #5a646b;
+    --form-input-border: 1px solid #d9dbe9;
+    --form-input-bg: transparent;
+    --form-input-focus-border: #1b1b1b;
+    --font-weight-700: 500;
+}
